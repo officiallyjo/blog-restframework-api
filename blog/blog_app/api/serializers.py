@@ -7,7 +7,7 @@ class ReviewSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class BlogSerializer(serializers.ModelSerializer):
-    Blog_post =ReviewSerializer(many=True,read_only = True)
+    Blog_post = ReviewSerializer(many=True,read_only = True)
 
     class Meta:
         model = BlogPost
